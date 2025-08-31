@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FDP Sprockhövel</title>
+  <meta name="description" content="Links der FDP Sprockhövel – Website, Instagram, Facebook." />
+  <style>
+    :root{
+      --bg:#fff200;
+      --card:#ffffff;
+      --text:#1a1a1a;
+      --muted:#555;
+      --accent:#e6007e;
+      --btn:#e6007e;
+      --btn-hover:#b50062;
+      --border:rgba(0,0,0,.1);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
+      background:var(--bg);color:var(--text);
+      display:flex;align-items:center;justify-content:center;padding:24px}
+    .wrap{width:100%;max-width:720px}
+    .card{background:var(--card);border:2px solid var(--accent);border-radius:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,.2);padding:24px}
+    .logo-container{text-align:center;margin-bottom:16px}
+    .logo-container img{max-width:200px;height:auto}
+    h1{text-align:center;font-size:28px;line-height:1.2;margin:0;color:var(--accent)}
+    p.subtitle{text-align:center;margin:4px 0 20px;color:var(--muted)}
+    .links{display:grid;grid-template-columns:1fr;gap:12px}
+    @media (min-width:560px){.links{grid-template-columns:repeat(3,1fr)}}
+    .link-item{border:1px solid var(--border);border-radius:18px;background:var(--card);
+      padding:16px;display:flex;align-items:center;justify-content:center;
+      min-height:80px}
+    .link-item a{display:inline-flex;align-items:center;justify-content:center;
+      text-decoration:none;font-weight:600;padding:14px;border-radius:12px;
+      background:var(--btn);color:#fff;border:1px solid var(--border);width:100%;text-align:center}
+    .link-item a:hover{background:var(--btn-hover)}
+    footer{margin-top:24px;color:var(--muted);font-size:12px;text-align:center;line-height:1.4}
+    footer a{color:var(--accent);text-decoration:none}
+    footer a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="logo-container">
+        <img src="FDP_Logo.png" alt="FDP Sprockhövel Logo">
+      </div>
+      <h1>FDP Sprockhövel</h1>
+      <p class="subtitle">Hier findet ihr unseren Online-Auftritt.</p>
+      <div class="links">
+        <div class="link-item">
+          <a href="https://www.fdp-sprockhoevel.de" target="_blank" rel="noopener">Website</a>
+        </div>
+        <div class="link-item">
+          <a href="https://www.instagram.com/fdpsprockhoevel" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="link-item">
+          <a href="https://www.facebook.com/FDPSprockhoevel" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <footer>
+        <strong>Impressum:</strong><br>
+        FDP Ortsverband Sprockhövel<br>
+        Vertreten durch Ronald Mayer; Mittelstr. 44; 45549 Sprockhövel<br>
+        <a href="https://www.fdp-sprockhoevel.de/impressum" target="_blank" rel="noopener">Zum vollständigen Impressum</a>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
